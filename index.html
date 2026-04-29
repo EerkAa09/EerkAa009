@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erka - Photos & Stories</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Эрка-гийн Дурсамж</h1>
+            <p>Дурсамж дүүрэн зураг & Бичвэрүүд</p>
+        </header>
+
+        <section class="upload-section">
+            <div class="upload-grid">
+                <div class="upload-area" id="photoUpload">
+                    <span class="upload-icon">📸</span>
+                    <div class="upload-title">Дурсамжийн Зураг</div>
+                    <div class="upload-desc">Чирж авчирах эсвэл Дарж сонгонуу</div>
+                    <input type="file" id="photoInput" accept="image/*" style="display: none;">
+                    <div id="photoPreview"></div>
+                </div>
+
+                <div class="upload-area" id="textUpload">
+                    <span class="upload-icon">✍️</span>
+                    <div class="upload-title">Бичвэр эсвэл Утга</div>
+                    <div class="upload-desc">Зурагны утга эсвэл дурсамжаа бичнүү</div>
+                    <textarea id="storyText"
+                        placeholder="What's on your mind today? Write your story here..."></textarea>
+                    <div id="textPreview"></div>
+                </div>
+            </div>
+
+            <button class="share-btn" id="shareBtn">✨ Дурсамжийг хадгалх</button>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="empty-state">
+                <h3>✨ хараахан дурсамж хадгалаагүй байна</h3>
+                <p>Share your first photo or story above!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
